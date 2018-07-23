@@ -1,0 +1,9 @@
+<ul>
+    {% for snippet in allToDos %}
+        {% if snippet.status.status == 'DONE' %}
+            <li style="color:#00CC66;"> {{ snippet.status }} :: {{ snippet.topic }} | {{ snippet.details }}</a></li>
+        {% else %}
+            <li style="color:#FF5733;"> {{ snippet.status }} :: {{ snippet.topic }} | {{ snippet.details }}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
